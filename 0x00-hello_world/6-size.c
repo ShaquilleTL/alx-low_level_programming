@@ -3,9 +3,9 @@
 /**
  * main -entry into the program
  *
- * this program will Print the size of different
- * types in C to the terminal
- * 
+ * Description: this program will Print the size of different
+ * types in C to the terminal on both 32 and 64-bit.
+ * Return: 0(Success)
  */
 
 int main(void)
