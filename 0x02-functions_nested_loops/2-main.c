@@ -1,13 +1,10 @@
 #include "main.h"
 
 /**
- * main - Program for task 2 will be run here
+ * main - check the code
  *
- * Description: Print alphabet 10times in lowercase
- *
- * Return: 0 (Succesful)
+ * Return: Always 0.
  */
-
 int main(void)
 {
 	print_alphabet_x10();
