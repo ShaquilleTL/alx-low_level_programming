@@ -12,7 +12,7 @@ int main(void)
 	long int i = 1, j = 2;
 	long int k;
 
-	printf("%lu\n", j);
+	printf("%lu, ", j);
 	while (count == 50)
 	{
 		if (count == 50)
