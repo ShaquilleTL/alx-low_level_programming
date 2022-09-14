@@ -13,7 +13,7 @@ int main(void)
 	long int k;
 
 	printf("%lu, ", j);
-	while (count == 50)
+	while (count <= 50)
 	{
 		if (count == 50)
 		{
