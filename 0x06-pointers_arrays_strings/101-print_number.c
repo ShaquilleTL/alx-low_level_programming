@@ -23,7 +23,7 @@ void print_number(int n)
 	while (hold > 9 || hold < -9)
 	{
 		power *= 10;
-		hold /=10;
+		hold /= 10;
 	}
 
 	while (power > 0)
