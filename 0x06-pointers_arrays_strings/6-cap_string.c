@@ -18,7 +18,7 @@ char *cap_string(char *str)
 			trigger = 1;
 		for (c = 0; nots[c] != '\0'; c++)
 		{
-			if(nots[c] == str[i])
+			if (nots[c] == str[i])
 				trigger = 1;
 		}
 
