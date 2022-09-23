@@ -8,17 +8,27 @@
 
 char *rot13(char *s)
 {
-	int i;
-	char alphabet[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-	char rotate[] = "nopqrstuvwxyzabcdefghijklm";
+	int i, j;
+	char *alpha;
 
-	for (i = 0; s[i] != '\0'; i++)
+	alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	i = 0;
+	while (s[i] != '\0')
 	{
-		if ((s[i] > 64 && s[i] < 91) || (s[i] > 96 && s[i] < 123))
+		j = 0;
+		while (alpha[j] != '\0')
 		{
-			s[i] = (s[i] - 65 > 25) ?
-				rotate[s[i] - 97] : alphabet[s[i] - 65];
+			if (s[i] == alpha[j])
+			{
+				int ref;
+
+				ref = ((j + 13) % 26) + ((j / 26) * 26);
+				s[i] = alpha[ref];
+				break;
+			}
+			j++;
 		}
+		i++;
 	}
-	return (s);
+		return (s);
 }
