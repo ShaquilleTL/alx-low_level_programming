@@ -21,17 +21,16 @@ unsigned int _strspn(char *s, char *accept)
 		j = 0;
 		while (accept[j] != '\0')
 		{
-			if(s[i] == accept[j])
+			if (s[i] == accept[j])
 			{
-			c++;
+				c++;
+				break;
+			}
+			j++;
+		}
+		if (accept[j] == '\0')
 			break;
-		}
-		j++;
-		}
-	
-	if (accept[j] == '\0')
-		break;
-	i++;
-}
-return (c);
+		i++;
+	}
+	return (c);
 }
