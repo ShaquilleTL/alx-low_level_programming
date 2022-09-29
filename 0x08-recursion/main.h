@@ -10,6 +10,8 @@ int is_prime_number(int n);
 int recursive(int n, int d);
 int _sqrt(int s, int i);
 int is_palindrome(char *s);
+int _strlen_recursion(char *);
+int checker(char *, int, int);
 int get_length(char *s);
 int my_pal(char *s, int l);
 int wildcmp(char *s1, char *s2);
