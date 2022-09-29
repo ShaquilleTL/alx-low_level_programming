@@ -1,6 +1,6 @@
 #include "main.h"
 
-/**
+/*
  * is_prime_number - determine if number is prime number
  * @n: type int number
  * Return: 1 if prime, 0 if not
@@ -8,11 +8,14 @@
 
 int is_prime_number(int n)
 {
-	if (n < 2)
+	if (n <= 1)
 		return (0);
-	if (n < 4)
+	if (n <= 3)
 		return (1);
-	return (recursive(n, 2));
+	else if (n % 2 == 0 || n % 3 == 0)
+		return (0);
+	else
+	return (recursive(n, 5));
 }
 
 /**
