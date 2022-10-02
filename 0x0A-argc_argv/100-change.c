@@ -5,7 +5,7 @@
  * main - prints the min number of coins to make change for an amount of money.
  * @argc: argument count
  * @argv: argument vector type array of strings
- * Return: 1 if error 
+ * Return: 1 if error
  */
 
 int main(int argc, char *argv[])
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 			}
 		}
 		if (sum == 1)
-			count ++;
+			count++;
 	}
 	else
 	{
